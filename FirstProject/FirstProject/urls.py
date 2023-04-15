@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,re_path
+from django.urls import path
 from FirstApp import views
 from MultiViewsApp import views as v1
 from App1.views import f11
@@ -41,6 +41,6 @@ urlpatterns = [
 	path('firstdemo/',views.demo),
 	path('seconddemo/',views.demo),
 	path('thirddemo/',views.demo),
-    re_path("^.*$",views.homepage),
+    
     
 ]
